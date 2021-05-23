@@ -37,7 +37,13 @@ sudo zfs load-key main-pool/trunk
 Listing dataset status with some custom fields:
 
 ```bash
-sudo zfs list -o name,avail,used,usedchild,mountpoint,mounted,encryption,keystatus -t filesystem,volume
+sudo zfs list -o name,type,avail,used,usedchild,mountpoint,mounted,encryption,keystatus,creation -t filesystem,volume,snapshot
+```
+
+Creating snapshot:
+
+```bash
+sudo zfs snapshot main/yolo@init
 ```
 
 # Some Performance Observations

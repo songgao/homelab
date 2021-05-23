@@ -13,7 +13,7 @@ The container is created using Proxmox web UI, with ID 1001 and name
 `kbfs-backup-syncer`. Note that here 1001 is just an arbitrary container ID,
 and has nothing to do with the UID 1001 mentioned below. The container uses
 bridged networking and gets an IP in the same subnet as the host. It runs
-Ubuntu 20.04.
+Ubuntu 20.04. Locale is set to `en_US.UTF-8`.
 
 ## Mounting the Dataset
 
